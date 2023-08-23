@@ -4,6 +4,7 @@ VAR
 :root{
   --back-main:#141922;
   --back-player:#282828;
+  --back-head:#080B12;
   --text-grey:#7D7F84;
   --margin-20px:20px;
   --margin-40px:40px;
@@ -25,7 +26,7 @@ GENERAL
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "montserrat", "Helvetica Neue", Helvetica, A;
  }
 /****************************************************************
 DEBUG 
@@ -65,13 +66,34 @@ SECTION MAIN
 ****************************************************************/
 .main-content{
   background-color: var(--back-main);
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
+}
+aside{
+  width: 220px;
+  background-color: black;
+}
+.box-main{
+  width: calc(100% - 220px);
+}
+.box-main .head{
+  height: 80px;
+  width: 100%;
+  background-color: var(--back-head);
+  justify-content: end;
+  align-items: center;
+}
+.box-main .button{
+  height: 40%;
+  background-color: red;
+}
+.box-main .body{
+  height: calc(100%-80px);
 }
 /****************************************************************
 SECTION PLAYER 
 ****************************************************************/
 .box-player{
-  height: 80px;
+  height: 100px;
   background-color: var(--back-player);
   justify-content: space-between;
 }
