@@ -34,8 +34,8 @@ DEBUG
 .debug-box{
   background-color: rgba(255, 0, 0, 0.5);
 
-  min-width: 400px;
-  min-height: 400px;
+
+
 }
 .debug{
   background-color: rgba(0, 0, 0, 0.5);
@@ -50,7 +50,7 @@ FLEX
   display: flex;
 }
 .d-column{
-  flex-direction: row;
+  flex-direction: column;
 }
 .d-wrap{
   flex-wrap: wrap;
@@ -71,6 +71,13 @@ SECTION MAIN
 aside{
   width: 220px;
   background-color: black;
+  justify-content: space-between;
+}
+aside .row{
+  overflow: auto;
+}
+aside .col.user-setting{
+  position: sticky;
 }
 .box-main{
   width: calc(100% - 220px);
