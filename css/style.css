@@ -100,6 +100,10 @@ aside .col.user-setting{
 .body nav{
   justify-content: center;
 }
+.body nav ul{
+  width: 100%;
+  justify-content: space-between;
+}
 .body nav li{
   margin: 15px;
 }

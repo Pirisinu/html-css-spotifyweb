@@ -1,0 +1,17 @@
+@media screen and (max-width: 1100px){
+  div.row.recently .col{
+    width: calc(100%/4);
+  }
+  body{
+    background-color: red;
+  }
+}
+@media screen and (max-width: 868px){
+
+}
+@media screen and (max-width: 700px){
+
+}
+@media screen and (max-width: 600px){
+
+}
