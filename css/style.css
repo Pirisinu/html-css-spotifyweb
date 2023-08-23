@@ -60,3 +60,17 @@ CONTAINER
 .container{
   margin: 0 auto;
 }
+/****************************************************************
+SECTION MAIN 
+****************************************************************/
+.main-content{
+  background-color: var(--back-main);
+  height: calc(100vh - 80px);
+}
+/****************************************************************
+SECTION PLAYER 
+****************************************************************/
+.player{
+  height: 80px;
+  background-color: var(--back-player);
+}
