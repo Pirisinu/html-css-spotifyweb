@@ -1,0 +1,62 @@
+/****************************************************************
+VAR 
+****************************************************************/
+:root{
+  --back-main:#141922;
+  --back-player:#282828;
+  --text-grey:#7D7F84;
+  --margin-20px:20px;
+  --margin-40px:40px;
+  --margin-60px:60px;
+  --margin-20-0:20px 0px;
+  --margin-40-0:40px 0px;
+  --margin-60-0:60px 0px;
+  --padding-20px:20px;
+  --padding-40px:40px;
+  --padding-60px:60px;
+  --padding-20-0:20px 0px;
+  --padding-40-0:40px 0px;
+  --padding-60-0:60px 0px;
+}
+/****************************************************************
+GENERAL 
+****************************************************************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+ }
+/****************************************************************
+DEBUG 
+****************************************************************/
+.debug-box{
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid black;
+  min-width: 400px;
+  min-height: 400px;
+}
+.debug{
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid red;
+  min-height: 50px;
+  min-width: 50px;
+}
+/****************************************************************
+FLEX 
+****************************************************************/
+.d-flex{
+  display: flex;
+}
+.d-column{
+  flex-direction: row;
+}
+.d-wrap{
+  flex-wrap: wrap;
+}
+/****************************************************************
+CONTAINER 
+****************************************************************/
+.container{
+  margin: 0 auto;
+}
