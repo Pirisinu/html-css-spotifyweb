@@ -70,7 +70,11 @@ SECTION MAIN
 /****************************************************************
 SECTION PLAYER 
 ****************************************************************/
-.player{
+.box-player{
   height: 80px;
   background-color: var(--back-player);
+  justify-content: space-between;
+}
+.box-player .player{
+  width: 50%;
 }
