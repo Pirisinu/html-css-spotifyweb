@@ -33,7 +33,7 @@ DEBUG
 ****************************************************************/
 .debug-box{
   background-color: rgba(255, 0, 0, 0.5);
-  border: 1px solid black;
+
   min-width: 400px;
   min-height: 400px;
 }
@@ -87,12 +87,42 @@ aside{
   background-color: red;
 }
 .box-main .body{
-  height: calc(100%-80px);
+  height: 100%;
+  overflow: auto;
+}
+.body nav{
+  justify-content: center;
+}
+.body nav li{
+  margin: 15px;
+}
+.body .col .card{
+  height: 300px;
+  background-color: red;
+}
+.body  .row.recently{
+  width: 100%;
+}
+.row.recently .col{
+  width: calc(100%/6);
+  margin: var(--margin-20px);
+}
+.row.for-you{
+  width: calc(100% / 3);
+}
+.row.for-you .col{
+  justify-content: space-around;
+  margin: var(--margin-20px);
+  width: 50%;
+}
+.row.for-you .card{
+  width: 100%;
 }
 /****************************************************************
 SECTION PLAYER 
 ****************************************************************/
 .box-player{
+  position: sticky;
   height: 100px;
   background-color: var(--back-player);
   justify-content: space-between;
