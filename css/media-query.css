@@ -1,17 +1,56 @@
 @media screen and (max-width: 1100px){
-  div.row.recently .col{
+  div.row.recently{
+    flex-wrap: wrap;
     width: calc(100%/4);
   }
-  body{
-    background-color: red;
+  div.row.recently .col{
+    width: 20%;
+  }
+
+  .row.for-you,
+  .row.artist{
+    width: 50%;
   }
 }
 @media screen and (max-width: 868px){
-
+  div.row.recently{
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+  }
+  div.row.recently .col{
+    width: 40%;
+  }
+  .row.for-you,
+  .row.artist{
+    width: 100%;
+    justify-content: center;
+  }
+  .row.for-you .col,
+  .row.artist .col{
+    width: 40%;
+  }
 }
 @media screen and (max-width: 700px){
 
 }
 @media screen and (max-width: 600px){
-
+  .body nav li a{
+    font-size: 1rem;
+  }
+  .box-main{
+    width: calc(100% - 50px);
+  }
+  aside{
+    width: 50px;
+    padding: 5px
+  }
+  .pc-view{
+    display: none;
+  }
+  .logo-smll{
+    display: block;
+    width: 100%;
+  }
+  
 }
