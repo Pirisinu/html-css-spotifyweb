@@ -4,7 +4,6 @@ VAR
 :root{
   --back-main:#141922;
   --back-player:#282828;
-  --back-head:#080B12;
   --text-grey:#7D7F84;
   --margin-20px:20px;
   --margin-40px:40px;
@@ -98,19 +97,13 @@ SECTION MAIN
 ****************************************************************/
 .main-content{
   background-color: var(--back-main);
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
 }
 aside{
   width: 220px;
   padding-left: 20px;
   background-color: black;
   justify-content: space-between;
-}
-aside .row{
-  overflow: auto;
-}
-aside .col.user-setting{
-  position: sticky;
 }
 aside .logo-big{
   padding: 20px 60px 20px 0px;
@@ -127,17 +120,25 @@ aside .img-svg img{
 aside .playlist h2{
   margin: var(--margin-20-0);
 }
-aside .playlist .add-playlist{
+aside .row .playlist-container{
+  overflow: auto;
   height: 100%;
-  padding: 10px;
 }
-aside .playlist .add-playlist i{
-  background-color: var(--text-grey);
+aside .playlist .add-playlist{
   width: 50px;
   height: 50px;
+  margin: 10px 10px 10px 0px ;
+  background-color: var(--text-grey);
+  justify-content: center;
+  align-items: center;
+}
+aside .playlist .add-playlist i{
+  font-size: 2rem;
+  font-weight: bold;
 }
 aside .user-setting{
   padding-right: 20px;
+  position: sticky;
 }
 aside .user-setting .setting{
   object-fit: contain;
@@ -146,23 +147,32 @@ aside .user-setting .setting{
 .box-main{
   width: calc(100% - 220px);
   position: relative;
+  overflow: hidden;
 }
 .box-main .head{
   position: absolute;
-  height: 80px;
+  height: 120px;
   width: 100%;
-  background-color: var(--back-head);
+  background-color: #080b12a8;
   justify-content: end;
   align-items: center;
 }
 .box-main .button{
-  height: 40%;
-  background-color: red;
+  height: 60%;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.box-main .button a{
+
+  
 }
 .box-main .body{
   overflow: auto;
   height: 100%;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .body nav{
   width: 100%;
@@ -225,7 +235,7 @@ aside .user-setting .setting{
 SECTION PLAYER 
 ****************************************************************/
 .box-player{
-  height: 100px;
+  height: 150px;
   background-color: var(--back-player);
   justify-content: space-between;
 }
