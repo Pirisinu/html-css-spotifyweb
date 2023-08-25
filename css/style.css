@@ -109,7 +109,7 @@ CONTAINER
 /****************************************************************
 SECTION MAIN 
 ****************************************************************/
-.main-content{
+.top-content{
   overflow: hidden;
   background-color: var(--back-main);
   height: calc(100vh - 100px);
@@ -144,16 +144,25 @@ aside .row{
   overflow: hidden;
 }
 aside .row .playlist-container{
-  overflow: auto;
   height: 100%;
 }
+aside .playlist{
+  height: 100%;
+}
+aside .playlist .playlist-container{
+  overflow: auto;
+  height: 50%;
+}
 aside .playlist .add-playlist{
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 30px 20px;
   background-color: var(--light-grey);
 }
 aside .playlist .add-playlist i{
   font-size: 2rem;
   font-weight: bold;
+}
+aside .playlist .playlist-head span{
+  line-height: 70px;
 }
 aside .user-setting{
   padding: 0px 20px;
@@ -190,32 +199,32 @@ aside .user-setting .setting{
 .box-main .button a{
   color: white;
 }
-.box-main .body{
+.box-main .main-content{
   overflow: auto;
   height: 100%;
   padding-top: 120px;
 }
-.body nav{
+.main-content nav{
   width: 100%;
 }
-.body nav ul{
+.main-content nav ul{
   padding: 10px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
-.body nav li{
+.main-content nav li{
   margin: var(--margin-20-0);
   text-align: center;
 }
-.body nav li a{
+.main-content nav li a{
   color: var(--light-grey);
   text-transform: uppercase;
   padding: 20px;
 
   text-decoration: none;
 }
-.body  .row.recently{
+.main-content  .row.recently{
   width: 100%;
   text-align: center;
 }
@@ -253,57 +262,57 @@ aside .user-setting .setting{
 /****************************************************************
 SECTION BOTTOM 
 ****************************************************************/
-section.bottom{
+section.bottom-player{
   height: 100px;
   width: 100%;
   background-color: var(--back-player);
   justify-content: space-between;
 }
-section.bottom i{
+section.bottom-player i{
   color: white;
 }
-section.bottom .left-box,
-section.bottom .right-box{
+section.bottom-player .left-box,
+section.bottom-player .right-box{
   width: 250px;
 }
-section.bottom .player-command{
+section.bottom-player .player-command{
   height: 100%;
   margin: 0 auto;
 }
 /* PLAYER LEFT-BOX */
-.bottom .left-box h4{
+.bottom-player .left-box h4{
   color: white;
 }
-.bottom .left-box .artist-played{
+.bottom-player .left-box .artist-played{
   flex-grow: 1;
   margin-left: 10px;
 }
-.bottom .left-box .artist-played span{
+.bottom-player .left-box .artist-played span{
   font-size: .8rem;
 }
-.bottom .left-box .like i{
+.bottom-player .left-box .like i{
   margin-right: 10px;
 }
 /* PLAYER CENTRAL-BOX  */
-.bottom .central-box{
+.bottom-player .central-box{
   width: calc(100vw - 500px);
 }
-.bottom .central-box .player-command{
+.bottom-player .central-box .player-command{
   height: 50%;
   width: 200px;
   padding-top: 10px;
   justify-content: space-between;
   font-size: 1.2rem;
 }
-.bottom .central-box .player-command .play-button{
+.bottom-player .central-box .player-command .play-button{
   font-size: 2rem;
 }
-.bottom .central-box .player-timeline{
+.bottom-player .central-box .player-timeline{
   height: 50%;
   width: 100%;
   padding-bottom: 20px;
 }
-.bottom .central-box .player-timeline .time-bar{
+.bottom-player .central-box .player-timeline .time-bar{
   width: 60%;
   border: 1px solid var(--light-grey);
   margin: 0px 40px;
@@ -315,19 +324,19 @@ section.bottom .player-command{
   background-color: white;
 }
 /* PLAYER RIGHT-BOX */
-.bottom .right-box{
+.bottom-player .right-box{
   font-size: .8rem;
 }
-.bottom .right-box i{
+.bottom-player .right-box i{
   margin: 15px;
 }
-.bottom .right-box .volume-slider{
+.bottom-player .right-box .volume-slider{
   background-color: var(--light-grey);
   width: 150px;
   margin-right: 20px;
   border-radius: 10px;
 }
-.bottom .right-box .volume-slider .effective-volume{
+.bottom-player .right-box .volume-slider .effective-volume{
   width: 40%;
   height: 100%;
   border: 1px solid white;

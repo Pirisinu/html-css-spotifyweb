@@ -35,7 +35,7 @@
 
 }
 @media screen and (max-width: 600px){
-  .body nav li a{
+  .main-content nav li a{
     font-size: 1rem;
   }
   .box-main{
