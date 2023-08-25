@@ -45,7 +45,7 @@
           <div class="top-playlist">
             <h2>Playlist</h2>
             <div class="playlist-head d-flex">
-            <div class="add-playlist d-flex">
+            <div class="add-playlist mid-square d-flex align-c justify-c">
               <i class="fa-solid fa-plus fa-xl"></i>
             </div>
             <span class="pc-view">Crea playlist</span>
@@ -53,7 +53,7 @@
         </div>
            
         <div class="playlist-container">
-          <ul >
+          <ul>
             <li>
               <span class="pc-view">Nome Playlist</span></li>
             <li>
@@ -277,12 +277,21 @@
   </section>
 
   <section class="bottom d-flex">
-    <div class="left-box debug d-flex">
-<!--       <div>
+    <div class="left-box d-flex align-c">
+      <div class="big-square">
         <img src="img/sinister.jpeg" alt="Sinister">
-      </div> -->
+      </div>
+      <div class="artist-played">
+        <h4>Sinister</h4>
+        <span> Brano nome</span>
+      </div>
+      <span class="like">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+      </span>
 
     </div>
+
     <div class="central-box d-flex align-c d-column">
       <div class="player-command d-flex align-c">
         <a href="#">
@@ -301,11 +310,16 @@
           <i class="fa-solid fa-rotate-right"></i>
         </a>
       </div>
-      <div class="player-timeline debug">
-        
+      <div class="player-timeline d-flex align-c justify-c">
+        <span class="actual-time">0:25</span>
+        <div class="time-bar">
+          <div class="real-time"></div>
+        </div>
+        <span class="total-time">4:35</span>
       </div>
     </div>
-    <div class="right-box d-flex align-c debug">
+
+    <div class="right-box d-flex align-c">
       <i class="fa-solid fa-list"></i>
       <i class="fa-solid fa-display"></i>
       <i class="fa-solid fa-volume-high"></i>

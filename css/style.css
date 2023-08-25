@@ -74,6 +74,9 @@ DISPLAY
 .d-none{
   display: none;
 }
+.justify-c{
+  justify-content: center;
+}
 .align-c{
   align-items: center;
 }
@@ -91,6 +94,18 @@ CONTAINER
   object-fit: contain;
   overflow: hidden;
 }
+.ltl-square{
+  width: 30px;
+  height: 30px;
+}
+.mid-square{
+  width: 50px;
+  height: 50px;
+}
+.big-square{
+  width: 60px;
+  height: 60px;
+}
 /****************************************************************
 SECTION MAIN 
 ****************************************************************/
@@ -100,9 +115,12 @@ SECTION MAIN
   height: calc(100vh - 100px);
   position: relative;
 }
+/****************************************************************
+ASIDE
+****************************************************************/
 aside{
   height: 100%;
-  width: 220px;
+  width: 250px;
   background-color: black;
   justify-content: space-between;
 }
@@ -123,26 +141,22 @@ aside .img-svg img{
 }
 aside .row{
   height: 100%;
+  overflow: hidden;
 }
 aside .row .playlist-container{
   overflow: auto;
   height: 100%;
 }
 aside .playlist .add-playlist{
-  width: 50px;
-  height: 50px;
   margin: 10px 10px 10px 20px;
   background-color: var(--light-grey);
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
 }
 aside .playlist .add-playlist i{
   font-size: 2rem;
   font-weight: bold;
 }
 aside .user-setting{
-  padding-right: 20px;
+  padding: 0px 20px;
   position: sticky;
 }
 aside .user-setting .setting{
@@ -150,7 +164,7 @@ aside .user-setting .setting{
   border-bottom: 1px solid var(--light-grey);
 }
 .box-main{
-  width: calc(100% - 220px);
+  width: calc(100% - 250px);
   overflow: hidden;
 }
 .box-main .head{
@@ -158,17 +172,17 @@ aside .user-setting .setting{
   top: 0px;
   right: 0px;
   height: 120px;
-  width: calc(100% - 220px);
+  width: calc(100% - 250px);
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: end;
   align-items: center;
 }
 .box-main .button{
   height: 55px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, .8);
   border: 1px solid white;
   text-transform: uppercase;
-  margin-right: 50px;
+  margin-right: 20px;
   padding: 5px 50px;
   border-radius: 40px;
   align-items: center;
@@ -214,7 +228,7 @@ aside .user-setting .setting{
 }
 .row.recently .col{
   width: calc(100%/6);
-  margin: var(--margin-20px);
+  margin: 10px;
 }
 .row.for-you,
 .row.artist{
@@ -248,24 +262,38 @@ section.bottom{
 section.bottom i{
   color: white;
 }
-section.bottom .left-box{
-  width: 220px;
+section.bottom .left-box,
+section.bottom .right-box{
+  width: 250px;
 }
 section.bottom .player-command{
   height: 100%;
   margin: 0 auto;
 }
 /* PLAYER LEFT-BOX */
-
+.bottom .left-box h4{
+  color: white;
+}
+.bottom .left-box .artist-played{
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.bottom .left-box .artist-played span{
+  font-size: .8rem;
+}
+.bottom .left-box .like i{
+  margin-right: 10px;
+}
 /* PLAYER CENTRAL-BOX  */
 .bottom .central-box{
-  max-width: calc(100% - 700px);
+  width: calc(100vw - 500px);
 }
 .bottom .central-box .player-command{
   height: 50%;
   width: 200px;
-  justify-content: space-around;
-  font-size: 1.3rem;
+  padding-top: 10px;
+  justify-content: space-between;
+  font-size: 1.2rem;
 }
 .bottom .central-box .player-command .play-button{
   font-size: 2rem;
@@ -273,10 +301,22 @@ section.bottom .player-command{
 .bottom .central-box .player-timeline{
   height: 50%;
   width: 100%;
+  padding-bottom: 20px;
+}
+.bottom .central-box .player-timeline .time-bar{
+  width: 60%;
+  border: 1px solid var(--light-grey);
+  margin: 0px 40px;
+  border-radius: 10px;
+}
+.central-box .player-timeline .time-bar .real-time{
+  width: 25%;
+  height: 2px;
+  background-color: white;
 }
 /* PLAYER RIGHT-BOX */
 .bottom .right-box{
-
+  font-size: .8rem;
 }
 .bottom .right-box i{
   margin: 15px;
@@ -284,10 +324,11 @@ section.bottom .player-command{
 .bottom .right-box .volume-slider{
   background-color: var(--light-grey);
   width: 150px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 .bottom .right-box .volume-slider .effective-volume{
-  width: 20px;
+  width: 40%;
   height: 100%;
   border: 1px solid white;
-  margin-right: 20px;
 }
