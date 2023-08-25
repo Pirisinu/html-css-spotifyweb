@@ -4,19 +4,15 @@ VAR
 :root{
   --back-main:#141922;
   --back-player:#282828;
-  --text-grey:#7D7F84;
+  --light-grey:#7D7F84;
   --margin-20px:20px;
   --margin-40px:40px;
-  --margin-60px:60px;
   --margin-20-0:20px 0px;
   --margin-40-0:40px 0px;
-  --margin-60-0:60px 0px;
   --padding-20px:20px;
   --padding-40px:40px;
-  --padding-60px:60px;
   --padding-20-0:20px 0px;
   --padding-40-0:40px 0px;
-  --padding-60-0:60px 0px;
 }
 /****************************************************************
 GENERAL 
@@ -32,21 +28,21 @@ GENERAL
 img{
   width: 100%;
 }
-a, span, p{
-  color: var(--text-grey);
-}
-h2, h3{
+.img-svg{
+  width: 30px;
+  height: 30px; 
   margin: var(--margin-20-0);
-  color: white;
+  margin-right: 20px;
 }
-aside span{
-  line-height: 70px;
+span, p{
+  color: var(--light-grey);
+}
+h2, h3 ,p{
+  margin: var(--margin-20px);
+  color: white;
 }
 .box-main .row{
   margin: var(--margin-40-0);
-}
-.box-main h2, p{
-  padding-left: 20px;
 }
 .card{
   text-align: center;
@@ -78,6 +74,9 @@ DISPLAY
 .d-none{
   display: none;
 }
+.align-c{
+  align-items: center;
+}
 /****************************************************************
 CONTAINER 
 ****************************************************************/
@@ -85,7 +84,7 @@ CONTAINER
   margin: 0 auto;
 }
 .cercle-box{
-  background-color: var(--text-grey);
+  background-color: var(--light-grey);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -98,29 +97,32 @@ SECTION MAIN
 .main-content{
   overflow: hidden;
   background-color: var(--back-main);
-  height: calc(100vh - 150px);
+  height: calc(100vh - 100px);
   position: relative;
 }
 aside{
+  height: 100%;
   width: 220px;
-  padding-left: 20px;
   background-color: black;
   justify-content: space-between;
 }
 aside .logo-big{
-  padding: 20px 60px 20px 0px;
+  padding: 20px 60px 20px 20px;
+}
+aside li{
+  padding-left: 20px;
 }
 aside .img-svg{
-  width: 30px;
-  height: 30px; 
-  margin: var(--margin-20-0);
-  margin-right: 20px;
+  margin: 10px 10px 10px 0px;
+}
+aside span{
+  line-height: 50px;
 }
 aside .img-svg img{
   filter: opacity(0.5);
 }
-aside .playlist h2{
-  margin: var(--margin-20-0);
+aside .row{
+  height: 100%;
 }
 aside .row .playlist-container{
   overflow: auto;
@@ -129,8 +131,8 @@ aside .row .playlist-container{
 aside .playlist .add-playlist{
   width: 50px;
   height: 50px;
-  margin: 10px 10px 10px 0px ;
-  background-color: var(--text-grey);
+  margin: 10px 10px 10px 20px;
+  background-color: var(--light-grey);
   justify-content: center;
   align-items: center;
   overflow: auto;
@@ -145,7 +147,7 @@ aside .user-setting{
 }
 aside .user-setting .setting{
   object-fit: contain;
-  border-bottom: 1px solid var(--text-grey);
+  border-bottom: 1px solid var(--light-grey);
 }
 .box-main{
   width: calc(100% - 220px);
@@ -193,9 +195,10 @@ aside .user-setting .setting{
   text-align: center;
 }
 .body nav li a{
+  color: var(--light-grey);
   text-transform: uppercase;
   padding: 20px;
-  font-size: 1.5rem;
+
   text-decoration: none;
 }
 .body  .row.recently{
@@ -227,23 +230,64 @@ aside .user-setting .setting{
 .row.artist .card{
   width: 100%;
 }
-.row.artist .song-img{
-}
 .row.artist .song-img.cercle{
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: contain;
-
 }
 /****************************************************************
-SECTION PLAYER 
+SECTION BOTTOM 
 ****************************************************************/
-.box-player{
-  height: 150px;
+section.bottom{
+  height: 100px;
+  width: 100%;
   background-color: var(--back-player);
   justify-content: space-between;
 }
-.box-player .player{
-  width: 50%;
+section.bottom i{
+  color: white;
+}
+section.bottom .left-box{
+  width: 220px;
+}
+section.bottom .player-command{
+  height: 100%;
+  margin: 0 auto;
+}
+/* PLAYER LEFT-BOX */
+
+/* PLAYER CENTRAL-BOX  */
+.bottom .central-box{
+  max-width: calc(100% - 700px);
+}
+.bottom .central-box .player-command{
+  height: 50%;
+  width: 200px;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+.bottom .central-box .player-command .play-button{
+  font-size: 2rem;
+}
+.bottom .central-box .player-timeline{
+  height: 50%;
+  width: 100%;
+}
+/* PLAYER RIGHT-BOX */
+.bottom .right-box{
+
+}
+.bottom .right-box i{
+  margin: 15px;
+}
+.bottom .right-box .volume-slider{
+  background-color: var(--light-grey);
+  width: 150px;
+}
+.bottom .right-box .volume-slider .effective-volume{
+  width: 20px;
+  height: 100%;
+  border: 1px solid white;
+  margin-right: 20px;
 }
