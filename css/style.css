@@ -150,32 +150,34 @@ aside .user-setting .setting{
 .box-main{
   width: calc(100% - 220px);
   overflow: hidden;
-  margin-top: 120px;
 }
 .box-main .head{
   position: absolute;
   top: 0px;
+  right: 0px;
   height: 120px;
-  width: 100%;
+  width: calc(100% - 220px);
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: end;
   align-items: center;
 }
 .box-main .button{
-  height: 60%;
+  height: 55px;
+  background-color: black;
   border: 1px solid white;
-  border-radius: 20px;
-  color: white;
   text-transform: uppercase;
-  padding: 20px;
+  margin-right: 50px;
+  padding: 5px 50px;
+  border-radius: 40px;
+  align-items: center;
 }
 .box-main .button a{
-
-  
+  color: white;
 }
 .box-main .body{
   overflow: auto;
   height: 100%;
+  padding-top: 120px;
 }
 .body nav{
   width: 100%;
