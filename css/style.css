@@ -6,6 +6,7 @@
   --back-player:#282828;
   --light-grey:#7D7F84;
   --margin-20px:20px;
+  --margin-30px:30px;
   --margin-40px:40px;
   --margin-20-0:20px 0px;
   --margin-40-0:40px 0px;
@@ -21,7 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "montserrat", "Helvetica Neue", Helvetica, A;
+  font-family: "montserrat";
   list-style: none;
   text-decoration: none;
 }
@@ -135,13 +136,16 @@ aside li{
   align-content: center;
 }
 aside li span{
-  line-height: 50px;
+  line-height: 40px;
 }
 aside li .img-svg img{
   filter: opacity(0.5);
 }
+aside .top-playlist span{
+  line-height: 45px;
+}
 aside li.active-home{
-  border-left: 2px solid yellow;
+  border-left: 3px solid yellow;
   font-size: 1.3rem;
 }
 aside li.active-home span{
@@ -164,6 +168,7 @@ aside .playlist .add-playlist{
   background-color: var(--light-grey);
 }
 aside .playlist .add-playlist i{
+  color: black;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -230,10 +235,13 @@ aside .user-setting .setting{
 }
 .main-content nav li a{
   color: var(--light-grey);
+  margin: var(--margin-20px);
   text-transform: uppercase;
-  padding: 20px;
-
   text-decoration: none;
+}
+.main-content h2{
+  font-size: 2rem;
+  font-weight: 700;
 }
 .main-content  .row.recently{
   width: 100%;
@@ -343,7 +351,7 @@ section.bottom-player .player-command{
 }
 .bottom-player .right-box .volume-slider{
   background-color: var(--light-grey);
-  width: 150px;
+  width: 30%;
   margin-right: 20px;
   border-radius: 10px;
 }

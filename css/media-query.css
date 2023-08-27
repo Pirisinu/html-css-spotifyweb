@@ -14,6 +14,12 @@
   }
 }
 @media screen and (max-width: 868px){
+  .main-content nav li a{
+    font-size: 1.3rem;
+  }
+  .main-content section>h2,p{
+    margin-left: 40px;
+  }
   div.row.recently{
     flex-wrap: wrap;
     width: 50%;
@@ -32,12 +38,9 @@
     width: 40%;
   }
 }
-@media screen and (max-width: 700px){
-
-}
 @media screen and (max-width: 600px){
-  .main-content nav li a{
-    font-size: 1rem;
+  .pc-view{
+    display: none;
   }
   .box-main{
     width: calc(100% - 50px);
@@ -46,12 +49,53 @@
     width: 50px;
     padding: 5px
   }
-  .pc-view{
-    display: none;
-  }
-  .logo-smll{
+  aside .logo-smll{
     display: block;
     width: 100%;
   }
-  
+  aside .col.home .img-svg{
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+  }
+  aside .col.home li{
+    border: none;
+    padding: 0;
+  }
+  aside .col.home li a{
+    font-size: 2rem;
+  }
+  aside .user-setting{
+    padding: 0;
+  }
+  aside .user-setting .setting{
+    border: none;
+  }
+  aside .user-setting .img-svg{
+    margin: 10px auto;
+  }
+  .box-main .head{
+    width: calc(100% - 50px);
+  }
+  .main-content nav li a{
+    font-size: 1rem;
+  }
+  div.row.recently .col,
+  .row.for-you .col,
+  .row.artist .col{
+    width: 45%;
+    margin: 1%;
+  }
+  section.bottom-player> div{
+    width: 25%;
+  }
+  section.bottom-player .central-box{
+    width: 50%;
+  }
+  section.bottom-player .central-box .player-timeline{
+    padding-bottom: 0;
+  }
+  section.bottom-player .right-box i{
+    margin: 10px;
+  }
 }
