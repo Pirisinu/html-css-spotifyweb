@@ -1,0 +1,33 @@
+.main-content nav li:hover{
+  transform: scale(1.3);
+  transition: all 0.5s ease;
+  filter: opacity(1);
+}
+.main-content nav li:hover a{
+  color: white;
+}
+
+aside .home a:hover img{
+  filter: opacity(1);
+  transform: scale(1.3);
+  transition: all 0.2s ease;
+}
+aside .home a:hover span{
+  color: white;
+}
+aside .add-playlist:hover{
+  background-color: white;
+}
+aside .add-playlist:hover i{
+  transform: scale(1.3);
+}
+aside .playlist-container a:hover span{
+  color: white;
+}
+.main-content .col:hover{
+  transform: scale(1.05);
+}
+section.bottom-player i:hover{
+  transform: scale(1.4);
+
+}

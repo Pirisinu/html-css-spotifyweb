@@ -76,9 +76,12 @@
   }
   .box-main .head{
     width: calc(100% - 50px);
-  }
+  } 
   .main-content nav li a{
     font-size: 1rem;
+  }
+  .main-content section h2{
+    margin-left: 20px;
   }
   div.row.recently .col,
   .row.for-you .col,
