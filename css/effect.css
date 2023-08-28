@@ -27,19 +27,26 @@ aside .playlist-container a:hover span{
 .main-content .col:hover{
   transform: scale(1.05);
 }
+.main-content .col .song-img-box:hover .play-song{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section.bottom-player i:hover{
   transform: scale(1.4);
 }
 .box-main .button:hover{
   transform: scale(1.1);
 }
-.central-box .player-timeline .time-bar:hover .real-time{
+.central-box .player-timeline .time-bar:hover .real-time,
+.right-box .volume-slider:hover .effective-volume{
   background-color: greenyellow;
 }
-.central-box .player-timeline .time-bar:hover .pointer-time{
+.central-box .player-timeline .time-bar:hover .pointer{
   display: block;
   transform: scale(6);
 }
+
 /* FAKE ACTIVE */
 aside li.active{
   border-left: 3px solid yellow;

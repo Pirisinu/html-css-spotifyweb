@@ -96,6 +96,7 @@ h2, h3 ,p{
 .cercle-box{
   background-color: var(--light-grey);
   height: 30px;
+  width: 30px;
   border-radius: 50%;
   object-fit: contain;
   overflow: hidden;
@@ -186,6 +187,16 @@ aside .user-setting{
   padding: 0px 20px;
   position: sticky;
 }
+aside .user-setting h3{
+  margin: var(--padding-20-0);
+}
+aside .user-setting span{
+  line-height: 56px;
+}
+aside .user-setting .img-svg{
+  margin: 15px 0px;
+  margin-right: 20px;
+}
 aside .user-setting .setting{
   object-fit: contain;
   border-bottom: 1px solid var(--light-grey);
@@ -258,6 +269,23 @@ aside .user-setting .setting{
 .row.recently .col .card{
   height: 100%;
 }
+.row.recently .song-img-box,
+.row.for-you .song-img-box,
+.row.artist .song-img-box{
+  position: relative;
+}
+.row.recently .play-song,
+.row.for-you .play-song,
+.row.artist .play-song{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .row.recently .col .card span{
   font-size: .8rem;
   font-weight: bold;
@@ -273,7 +301,7 @@ aside .user-setting .setting{
 .row.for-you .col,
 .row.artist .col{
   justify-content: space-around;
-  margin: var(--margin-20px);
+  margin: 10px;
   width: 50%;
 }
 .row.for-you .card,
@@ -350,11 +378,11 @@ section.bottom-player .player-command{
   height: 2px;
   background-color: white;
 }
-.central-box .player-timeline .time-bar .pointer-time{
+.central-box .player-timeline .time-bar .pointer{
   height: 2px;
   width: 2px;
   border-radius: 50%;
-  background-color: black;
+  background-color: white;
   display: none;
 }
 /*      PLAYER RIGHT-BOX      */

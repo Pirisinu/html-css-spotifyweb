@@ -7,11 +7,15 @@
     width: 20%;
     margin: 20px;
   }
-
   .row.for-you,
   .row.artist{
     width: 50%;
   }
+  .row.for-you .col,
+  .row.artist .col{
+  justify-content: space-around;
+  margin: 20px;
+}
 }
 @media screen and (max-width: 868px){
   .main-content nav li a{
