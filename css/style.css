@@ -139,6 +139,7 @@ aside .logo-big{
 aside li{
   padding-left: 20px;
   align-content: center;
+  width: fit-content;
 }
 aside li span{
   line-height: 40px;
@@ -199,6 +200,7 @@ aside .user-setting .setting{
 /*      MAIN HEAD       */
 .box-main .head{
   position: absolute;
+  z-index: 999;
   top: 0px;
   right: 0px;
   height: 120px;
@@ -208,12 +210,12 @@ aside .user-setting .setting{
   align-items: center;
 }
 .box-main .button{
-  height: 55px;
+  height: 50px;
   background-color: rgba(0, 0, 0, .8);
   border: 1px solid white;
   text-transform: uppercase;
   margin-right: 20px;
-  padding: 5px 50px;
+  padding: 5px 40px;
   border-radius: 40px;
   align-items: center;
 }
@@ -237,6 +239,7 @@ aside .user-setting .setting{
 .main-content nav li{
   margin: var(--margin-20-0);
   text-align: center;
+  position: relative;
 }
 .main-content nav li a{
   color: var(--light-grey);
@@ -320,11 +323,11 @@ section.bottom-player .player-command{
 /*      PLAYER CENTRAL-BOX        */
 .bottom-player .central-box{
   width: calc(100vw - 500px);
+  padding: 15px;
 }
 .bottom-player .central-box .player-command{
   height: 50%;
   width: 200px;
-  padding-top: 10px;
   justify-content: space-between;
   font-size: 1.2rem;
 }
@@ -334,10 +337,10 @@ section.bottom-player .player-command{
 .bottom-player .central-box .player-timeline{
   height: 50%;
   width: 100%;
-  padding-bottom: 20px;
+  justify-content: space-between;
 }
 .bottom-player .central-box .player-timeline .time-bar{
-  width: 60%;
+  width: 80%;
   border: 1px solid var(--light-grey);
   margin: 0px 40px;
   border-radius: 10px;
@@ -346,6 +349,13 @@ section.bottom-player .player-command{
   width: 25%;
   height: 2px;
   background-color: white;
+}
+.central-box .player-timeline .time-bar .pointer-time{
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background-color: black;
+  display: none;
 }
 /*      PLAYER RIGHT-BOX      */
 .bottom-player .right-box{

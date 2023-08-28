@@ -98,6 +98,9 @@
   section.bottom-player .central-box .player-timeline{
     padding-bottom: 0;
   }
+  .bottom-player .left-box .like i{
+    margin: 5px 0px;
+  }
   section.bottom-player .right-box i{
     margin: 10px;
   }

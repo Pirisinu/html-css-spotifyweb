@@ -1,3 +1,4 @@
+/* HOVER */
 .main-content nav li:hover{
   transform: scale(1.3);
   transition: all 0.5s ease;
@@ -6,7 +7,6 @@
 .main-content nav li:hover a{
   color: white;
 }
-
 aside .home a:hover img{
   filter: opacity(1);
   transform: scale(1.3);
@@ -29,5 +29,31 @@ aside .playlist-container a:hover span{
 }
 section.bottom-player i:hover{
   transform: scale(1.4);
-
+}
+.box-main .button:hover{
+  transform: scale(1.1);
+}
+.central-box .player-timeline .time-bar:hover .real-time{
+  background-color: greenyellow;
+}
+.central-box .player-timeline .time-bar:hover .pointer-time{
+  display: block;
+  transform: scale(6);
+}
+/* FAKE ACTIVE */
+aside li.active{
+  border-left: 3px solid yellow;
+  font-size: 1.3rem;
+}
+.main-content nav li.active::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 5px);
+  width: 75%;
+  height: 2px;
+  background-color: yellow;
+  border-radius: 4px;
+  transform-origin: center;
 }
