@@ -286,6 +286,9 @@ aside .user-setting .setting{
   font-size: 2.5rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.row.artist .play-song{
+  border-radius: 50%;
+}
 .row.recently .col .card span{
   font-size: .8rem;
   font-weight: bold;
@@ -370,7 +373,7 @@ section.bottom-player .player-command{
 .bottom-player .central-box .player-timeline .time-bar{
   width: 80%;
   border: 1px solid var(--light-grey);
-  margin: 0px 40px;
+  margin: 0px 10px;
   border-radius: 10px;
 }
 .central-box .player-timeline .time-bar .real-time{
